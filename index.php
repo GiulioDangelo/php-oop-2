@@ -1,9 +1,8 @@
 <?php
-// include __DIR__ . './giochi.php';
-// include __DIR__ . './cuccie.php';
-// include __DIR__ . './cibo.php';
-include __DIR__ . './db.php';
-
+include __DIR__ . '/prodotti.php';
+include __DIR__ . '/giochi.php';
+include __DIR__ . '/cuccie.php';
+include __DIR__ . '/cibo.php';
 
 $giocoList= 
 [
@@ -33,10 +32,25 @@ $ciboList =
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin-bottom: 120px;
+    border: 1px solid black;
+}
+
+img{
+    max-width: 200px;
+}
+</style>
 
 <body>
     <?php foreach($giocoList as $gioco) {?>
-    <div class="gioco">
+    <div class="gioco card">
         <img src="<?= $gioco->img ?>">
         <div><?= $gioco->nome ?></div>
         <div><?= $gioco->animale ?></div>
@@ -49,7 +63,7 @@ $ciboList =
 
 
     <?php foreach($cucciaList as $cuccia) {?>    
-    <div class="cuccia">
+    <div class="cuccia card">
         <img src="<?= $cuccia->img ?>">
         <div><?= $cuccia->nome ?></div>
         <div><?= $cuccia->animale ?></div>
@@ -62,7 +76,7 @@ $ciboList =
 
 
     <?php foreach($ciboList as $cibo) {?>
-    <div class="cuccia">
+    <div class="cuccia card">
         <img src="<?= $cibo->img ?>">
         <div><?= $cibo->nome ?></div>
         <div><?= $cibo->animale ?></div>

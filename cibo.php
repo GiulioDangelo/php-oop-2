@@ -1,16 +1,17 @@
 <?php 
 
-// class Cibo extends Products{
-//     public $peso;
-//     public $calorie;
-//     public $gusto;
+class Cibo extends Products{
+    public $peso;
+    public $calorie;
+    public $gusto;
 
-//     public function __construct($peso, $calorie, $gusto)
-//     {
-//         $this->peso = $peso;
-//         $this->calorie = $calorie;
-//         $this->gusto = $gusto;
-//     }
+    public function __construct($nome, $prezzo,$animale, $img, $descrizione,$peso, $calorie, $gusto)
+    {
+        parent::__construct($nome, $prezzo,$animale, $img, $descrizione);
+        $this->peso = $peso;
+        $this->calorie = $calorie;
+        $this->gusto = $gusto;
+    }
 
 
-// }
+}
