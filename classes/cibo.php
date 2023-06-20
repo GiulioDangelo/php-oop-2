@@ -10,4 +10,6 @@ class Medicine extends Products{
         $this->calorie = $calorie;
         $this->gusto = $gusto;
     }
+
+    
 }

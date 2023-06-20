@@ -4,6 +4,7 @@ include __DIR__ . './giochi.php';
 include __DIR__ . './cuccia.php';
 include __DIR__ . './cibo.php';
 
+
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ include __DIR__ . './cibo.php';
 </head>
 <body>
     <div>
-        <?php foreach($products as $product) { ?>
+        <?php foreach($productsList as $product) { ?>
             
             <?php } ?>
     </div>
