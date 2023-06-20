@@ -4,10 +4,10 @@ include __DIR__ . './cuccie.php';
 include __DIR__ . './cibo.php';
 
 class Products {
-    public $nome;
-    public $prezzo;
+    public string $nome;
+    public int $prezzo;
     public $img;
-    public $descrizione;
+    public string $descrizione;
 
 
     public function __construct($nome, $prezzo, $img, $descrizione)
